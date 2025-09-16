@@ -26,8 +26,6 @@
                   radial-gradient(1000px 500px at 90% 90%, rgba(244,114,182,0.06), transparent 10%),
                   var(--bg1);
       color:#e6eef8;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
       line-height:1.45;
       padding:24px;
     }
@@ -42,10 +40,8 @@
 
     .hero{display:grid;grid-template-columns:180px 1fr;gap:28px;align-items:center;padding:22px;border-radius:16px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));box-shadow:0 6px 20px rgba(2,6,23,0.6)}
 
-    /* Profile image */
     .photo-wrap{width:180px;height:180px;border-radius:14px;overflow:hidden;background:var(--glass);display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,0.04)}
     .photo-wrap img{width:100%;height:100%;object-fit:cover;display:block}
-    /* If you don't have an image yet, the placeholder will appear */
 
     .hero h2{margin:0;font-size:28px}
     .hero p.lead{margin:8px 0 16px;color:var(--muted)}
@@ -58,7 +54,6 @@
     .btn-primary{background:linear-gradient(90deg,var(--accent1),var(--accent2));color:#061022}
     .btn-ghost{border:1px solid rgba(255,255,255,0.06);color:var(--muted);background:transparent}
 
-    /* Projects */
     section.projects{margin-top:22px;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
     .card{padding:16px;border-radius:12px;background:var(--card);border:1px solid rgba(255,255,255,0.03)}
     .card h3{margin:0 0 8px}
@@ -92,9 +87,8 @@
     <main>
       <section class="hero">
         <div class="photo-wrap">
-          <!-- Replace the src below with your photo path or URL. Example: src="assets/vinay.jpg" or a remote URL. -->
-          <!-- If you want to upload the photo here, tell me and I will update the code to use it. -->
-          <img id="profile-photo" src="https://via.placeholder.com/400x400.png?text=Your+Photo" alt="Profile photo of Vinay">
+          <!-- Replace src with your uploaded photo -->
+          <img id="profile-photo" src="assets/vinay.jpg" alt="Vinay's photo">
         </div>
 
         <div>
@@ -146,7 +140,6 @@
           <p>GitHub: <a href="https://github.com/mohodvinay308-prog" target="_blank" rel="noopener">github.com/mohodvinay308-prog</a></p>
         </div>
       </section>
-
     </main>
 
     <footer>
@@ -155,11 +148,7 @@
   </div>
 
   <script>
-    // small script to set current year
     document.getElementById('year').textContent = new Date().getFullYear();
-
-    // helper: if you paste an image URL in the prompt, we could replace the src automatically.
-    // Example usage (manual): document.getElementById('profile-photo').src = 'assets/vinay.jpg';
   </script>
 </body>
 </html>
